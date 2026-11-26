@@ -2,13 +2,10 @@
 
 目标：只给定观测数据，学习概率生成模型。每章改变一个主要建模条件，观察原来的边缘化和 MLE 方法能否继续使用。
 
-## 运行
+## 环境搭建
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-jupyter lab
+uv sync --locked
 ```
 
 在仓库根目录启动 Jupyter，按编号运行（CPU 即可）。第 01–05 章的整数编号章节使用相同的二维观测数据；第 04.5 章使用独立的非高斯模型；真实生成类别不参与训练。第 06–07 章因增加时间结构而重新生成数据。第 05 章优先读取第 04 章保存的模型，也可独立运行。
